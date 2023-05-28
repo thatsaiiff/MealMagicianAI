@@ -1,0 +1,378 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Working</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Macondo&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../static/assets/food.svg">
+    <link rel="stylesheet" href="{{ url_for('static', filename='public/test.css') }} ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+
+<body>
+   <div class="container">
+        <header>
+            <nav class="header__nav w-120">
+                <div class="header__logo">
+                    <p style="font-size: 25px; font-weight: 600;"><span style="color:rgb(172, 23, 50);">Meal</span> Magician</p>
+                    <!-- <img src="https://raw.githubusercontent.com/mustafadalga/farm-landing-page/master/assets/img/logo.svg" alt="Logo"> -->
+                </div>
+                <div class="header__nav__content">
+                    <div class="nav-close-icon"></div>
+                    
+
+                    <div class="header__signup">
+                        <ul class="header__menu">
+                            <li class="menu__item">
+                                <a href="/home" class="menu__link">Try It</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a href="/about" class="menu__link">About</a>
+                            </li>
+
+                            <li class="menu__item">
+                                <a href="#" class="menu__link active">How It Works</a> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="hamburger-menu-wrap">
+                    <div class="hamburger-menu">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero w-120">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">From pixels to flavors, unlock the magic of cooking with our image-to-recipe converter.</h1>
+                    <p class="hero__description">
+                        Picture-perfect recipes at your fingertips! Say goodbye to endless scrolling and hello to our cutting-edge image recognition technology that transforms your food photos into step-by-step cooking instructions.
+                </div>
+                <div class="hero__img">
+                    <img src="static/assets/Meal.gif".jpg alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="opportunities">
+            <div class="opportunities__img">
+                {# <img src="" alt=""> #}
+            </div>
+            <div class="opportunities__content w-105">
+                <div class="opportunities__head">
+                    <h2 class="opportunities__title">In 3 Steps </h2>
+                    <p class="opportunities__description">A whole new way to discover recipes! Let our app elevate your cooking journey by harnessing the power of AI to convert food images into delectable recipes that'll impress your taste buds.</p>
+                </div>
+                <div class="opportunities__body">
+                    <div class="opportunity">
+                        <i class="fa fa-user-circle" style="font-size: 8rem; color: rgb(172, 23, 50);"></i>
+                        <!-- <img src="https://raw.githubusercontent.com/mustafadalga/farm-landing-page/master/assets/img/opportunites/opportunity-1.svg" alt="Icon" class="opportunity__icon"> -->
+                        <h4 class="opportunity__title">Capture</h4>
+                        <p class="opportunity__description">
+                            Use your smartphone or camera to capture a clear, well-lit image of the food you want to turn into a recipe. Make sure to focus on the main ingredients and presentation to ensure accurate conversion.
+                        </p>
+                    </div>
+
+                    <div class="opportunity active">
+                        <i class="fa fa-upload" style="font-size: 8rem;"></i>
+                        <!-- <img src="https://raw.githubusercontent.com/mustafadalga/farm-landing-page/master/assets/img/opportunites/opportunity-2.svg" alt="Icon" class="opportunity__icon"> -->
+                        <h4 class="opportunity__title">Upload</h4>
+                        <p class="opportunity__description">
+                            Visit our user-friendly web app and upload the image you captured. Our advanced image recognition technology will analyze the photo, extracting key details and identifying the ingredients used.                       
+                        </p>
+                    </div>
+                    <div class="opportunity">
+                        <i class="fa fa-download" style="font-size: 8rem; color: rgb(172, 23, 50);"></i>
+                        <!-- <img src="https://raw.githubusercontent.com/mustafadalga/farm-landing-page/master/assets/img/opportunites/opportunity-3.svg" alt="Icon" class="opportunity__icon"> -->
+                        <h4 class="opportunity__title">Output</h4>
+                        <p class="opportunity__description">
+                            Within seconds, you'll receive the exciting result! Our app will generate a comprehensive recipe based on the uploaded image, complete with ingredient quantities, cooking instructions, and additional tips to help you recreate the dish exactly as pictured. Get ready to embark on a culinary adventure like no other!                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="invest  w-105">
+            <div class="invest__content">
+                <div class="invest__head">
+                    <!-- <h2 class="invest__title">About this food Image Recognition</h2> -->
+                    <h2 style="font-size: 25px; font-weight: 600;">About this <span style="color:rgb(172, 23, 50);">Recipe Generator</span></h2>
+                    <p class="invest__description" style="line-height: 3.5rem;">
+                        Our web app combines artificial intelligence and API technology to revolutionize recipe discovery. 
+                        By uploading an image, our AI algorithms identify the dish's ingredients and components, providing a complete recipe. 
+                        We integrate with leading recipe databases and APIs to retrieve relevant recipes with step-by-step instructions and alternative ingredient options. 
+                        Our dedicated team ensures a seamless user experience, with optimized AI models and backend infrastructure. Our app celebrates the universal love for food, offering a convenient way to explore new recipes, embark on culinary adventures, and create unforgettable dining experiences. 
+                        Join us as the art of cooking meets AI and API technology, guiding you to new flavors and inspiring your culinary creativity. 
+                        <strong>Bon appétit!</strong>
+                    </p>
+                </div>
+                <div class="invest__body">
+                    <div class="invest__item">
+                        <div class="invest__item__head">
+                            <h5 class="invest__item__subtitle"> AI technology Today</h5>
+                        </div>
+                        <div class="invest__item__body">
+                            <h4 class="invest__item__title">Related Research Works </h4>
+                            <p class="invest__item_description">
+                                These research works have contributed valuable insights and techniques to the development of our project                            </p>
+                        </div>
+                        <div class="invest__item__footer">
+                            <a href="https://www.hindawi.com/journals/cin/2021/1268453/" class="btn btn__invest">Read More </a>
+                        </div>
+                    </div>
+                    <div class="invest__item">
+                        <div class="invest__item__head">
+                            <h5 class="invest__item__subtitle">Code available for use on GitHub</h5>
+                        </div>
+                        <div class="invest__item__body">
+                            <h4 class="invest__item__title">GitHub Repository link.
+                            </h4>
+                            <p class="invest__item_description">
+                                Please feel free to visit our GitHub repository to explore and interact with our project..
+                            </p>
+                        </div>
+                        <div class="invest__item__footer">
+                            <a href="https://github.com/Diwakar03-59/Meal-Magician" class="btn btn__invest">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-is-works w-120">
+            <div class="works__content">
+                <div class="works__head">
+                    <h2 class="works__title">How it works</h2>
+                    <p class="works__description">
+                        The recipe generator from food image is an innovative system that uses advanced computer vision and machine learning techniques to analyze food images and generate corresponding recipes. By leveraging the power of artificial intelligence, 
+                        this system has the potential to revolutionize the way people discover and cook new dishes, making it a valuable tool for both home cooks and professional chefs.
+                    </p>
+                </div>
+                <div class="works__body">
+                    <ul class="form_progressbar">
+                        <li class="progressbar__step active" data-step="1">01</li>
+                        <li class="progressbar__step" data-step="2">02</li>
+                        <li class="progressbar__step" data-step="3">03</li>
+                        <li class="progressbar__step" data-step="4">04</li>
+                    </ul>
+                </div>
+                <div class="works__footer">
+                    <div class="works__step__content first_step">
+                        <h3 class="works__step_title"> Image processing</h3>
+                        <p class="works__step_description">
+                            The system applies image processing techniques to preprocess the image, such as resizing, cropping, and filtering, to improve the image quality and remove any noise or irrelevant information.
+                        </p>
+                    </div>
+                    <div class="works__step__content">
+                        <h3 class="works__step_title">Image Recognition</h3>
+                        <p class="works__step_description">
+                            The system uses a recipe generation algorithm that takes into account the ingredients, their quantities, and their nutritional information to generate a recipe that is similar to the input food dish. This is typically done using machine learning techniques such as natural language processing (NLP) and neural networks.
+                        </p>
+                    </div>
+                    <div class="works__step__content">
+                        <h3 class="works__step_title">Recipe generation</h3>
+                        <p class="works__step_description">
+                            The system outputs the generated recipe, which includes the list of ingredients, quantities, and instructions for preparing the dish.
+                        </p>
+                    </div>
+                    <div class="works__step__content">
+                        <h3 class="works__step_title"> Outcome</h3>
+                        <p class="works__step_description">
+                            Overall, the recipe generator from food image is a complex system that involves multiple steps and techniques from the fields of computer vision, machine learning, and natural language processing. It has the potential to revolutionize the way people discover and cook new recipes, and can be a valuable tool for both home cooks and professional chefs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="testimonials">
+            <div class="testimonials__content">
+                <div class="testimonials__head w-105">
+                    {# <img src="" alt="Quote" class="testimonials__quote"> #}
+                    <h2 class="testimonials__title">Our Team Membear For This Project</h2>
+                </div>
+                <div class="testimonials__body">
+                    <div class="testimonials__list">
+                        <div class="testimonial">
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    {# <img src="https://raw.githubusercontent.com/mustafadalga/farm-landing-page/master/assets/img/testimonials/1.png" alt="Testimonial"> #}
+                                    <img src="../static/assets/IMG_20230215_100806.jpg" alt="Testimonial" height="75" width="75" style="border-radius: 40px;">
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name"> Pijush Singh</h4>
+                                    <h4 class="testimonial__title">FrontEnd Desinger</h4>
+                                </div>
+                            </div>
+                            <p class="testimonial__description">
+                                “ I'm excited to talk to you about a new project I'm working on - an image to recipe generator. As a frontend developer, I've always been fascinated by the intersection of design and functionality“
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    <img src="../static/assets/IMG_20230215_100806.jpg" alt="Testimonial" height="80" width="80" style="border-radius: 40px;">
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name"> Diwakar Sah</h4>
+                                    <h4 class="testimonial__title">BackEnd & ML</h4>
+                                </div>
+                            </div>
+                            <p class="testimonial__description">
+                                “I'm thrilled to share with you a new project I'm working on - an image to recipe generator. As a backend developer, my focus has been on building the robust infrastructure that makes this tool possible.“
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    <img src="../static/assets/WhatsApp Image 2023-05-23 at 5.45.40 PM.jpeg" alt="Testimonial" height="85" width="80" style="border-radius: 35px;">
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name"> Saif Alam</h4>
+                                    <h4 class="testimonial__title">Machine Learning</h4>
+                                </div>
+                            </div>
+                            <p class="testimonial__description">
+                                “This tool has the potential to make cooking and eating more accessible and enjoyable for people of all skill levels. As a machine learning engineer“
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    <!-- <img src="https://raw.githubusercontent.com/mustafadalga/farm-landing-page/master/assets/img/testimonials/2.png" alt="Testimonial"> -->
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name"> Avishek Singh</h4>
+                                    <h4 class="testimonial__title">Member</h4>
+                                </div>
+                            </div>
+                            <p class="testimonial__description">
+                                “ Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, “
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial__profile">
+                                <div class="testimonial__img">
+                                    <img src="../static/assets/maroof.jpeg" alt="Testimonial" height="85" width="80" style="border-radius: 35px;"> 
+                                </div>
+                                <div class="testimonial__info">
+                                    <h4 class="testimonial__name"> Maroof Alam</h4>
+                                    <h4 class="testimonial__title">Member</h4>
+                                </div>
+                            </div>
+                            <p class="testimonial__description">
+                                “ Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, “
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__footer  w-105">
+                    <div class="testimonials__directions">
+                        <button class="btn__testimonials btn__testimonials__prev disable">
+                            <i class="fa fa-chevron-left"></i>
+                        </button>
+                        <button class="btn__testimonials btn__testimonials__next">
+                            <i class="fa fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="farm-invest w-105">
+            <h2 class="farm-invest__title">Make it easier with a <span> Single Scan</span> with <span>AI</span></h2>
+            <a href="/" class="btn btn__farm--invest">Try It</a>
+
+        </section>
+
+        <footer class="footer">
+            <div class="footer__body w-105">
+                <nav class="footer__nav">
+                    <ul class="footer_nav__menu">
+                        <li class="footer_nav__item">
+                            <h4 class="footer_nav__menu__title">Company</h4>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#" class="footer_nav__link">About Us</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#" class="footer_nav__link">Team</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#" class="footer_nav__link">Careers</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#" class="footer_nav__link">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_nav__menu">
+                        <li class="footer_nav__item">
+                            <h4 class="footer_nav__menu__title">Install</h4>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#" class="footer_nav__link">Features</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#" class="footer_nav__link">How it works</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#" class="footer_nav__link">Predicting</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#" class="footer_nav__link">Login</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_nav__menu">
+                        <li class="footer_nav__item">
+                            <h4 class="footer_nav__menu__title">Legal</h4>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#" class="footer_nav__link">Privacy</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#" class="footer_nav__link">Terms</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#" class="footer_nav__link">Security</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__contact">
+                    <h5 class="footer__contact__title">Reach Us</h5>
+                    <span>Write email to us</span>
+                    <a href="mailto:diwakarkumarsah77@gmail.com" class="email">info@magician.com</a>
+                    <a href="mailto:diwakarkumarsah77@gmail.com" class="btn btn__signin">
+                        <i class="far fa-user"></i> Contact
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom__content w-105">
+                    <div class="footer__logo"></div>
+                    <p class="footer_copyright">
+                        © Copyright 2023. Meal <span style="color: #000000;">Magician</span>
+                    </p>
+                </div>
+                {# <img src="static/files/backimg.png" alt="Mountain" class="footer_img"> #}
+            </div>
+        </footer>
+    </div> 
+    {# <script src="assets/js/main.js" type="module"></script> #}
+    {# <script src="templates/test.js"></script>  #}
+    <script src="{{ url_for('static', filename='public/test.js') }}"></script>
+</body>
+</html>

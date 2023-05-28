@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="../static/assets/food.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='public/home.css') }} ">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Macondo&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar flex">
+            <div class="sec-1">
+                <div class="navbar-logo">
+                    <img src="static/assets/food.svg" alt="Logo" width="80px" height="50px">
+                </div>
+            </div>
+            <div class="sec-2">
+                <div class="nav-items flex">
+                    <div class="nav-item"> <a href="">Home </a></div>
+                    <div class="nav-item"> <a href="about">About Us</a></div>
+                    <div class="nav-item"> <a href="https://github.com/Diwakar03-59/Meal-Magician">GitHub Repo </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contents">
+        <div class="form">
+            <h1>MEAL MAGICIAN</h1>
+            <h4>An AI powered Recipe Generator Web App for you to assist you in cooking.</h4>
+            
+            <p style="background-image: url('E:\background.jpg');">
+            <form method='POST' enctype='multipart/form-data' id="upload-form">
+                {{ form.hidden_tag() }}
+                {{ form.file() }}
+                {{ form.submit() }}
+            </form>
+        </div>
+    </div>
+
+    {% if response %}
+    <div class="output">
+        <div class="response">
+            <ul>
+                {% for item in response %}
+                    {% if item == 'Ingredients' %}
+                        <h3> {{ item }} </h3>
+                    {% endif %}
+                    <blockquote class="recipe">{{ item }}</blockquote>
+                {% endfor %}
+            </ul>
+                
+        </div>
+    </div>
+    {% endif %}
+
+    <script>
+        const form = document.getElementById('upload-form');
+        const submitButton = form.querySelector('input[type="submit"]');
+
+        form.addEventListener('submit', function() {
+            submitButton.style.backgroundColor = '#5cb85c'; // Change the background color on submit
+        });
+    </script>
+</body>
+</html>

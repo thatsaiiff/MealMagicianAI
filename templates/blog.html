@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="../static/assets/food.svg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='public/blog.css') }} ">
+    <script src="blog.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header id="navbar">
+          <a href="#" class="logo">MEAL<span>MAGICIAN</span></a>
+          <ul>
+            <li>
+              <a href="/home" class="active" style="color: #fff;">Generate Recipe</a>
+              <a href="/working" class="active" style="color: #fff;">How It Works</a>
+            </li>
+        </header>
+        <span class="menuIcon"  onClick="menuToggle();"></span>
+        <div class="content">
+          <div class="bannerText" id="slideshowText">
+            <div class="active">
+              <h2>About<br><span class="red">The Creators</span></h2>
+              <p>
+                Welcome to our world of culinary innovation! We are a group of friends who have embarked on an exciting journey together during our <strong>Final year of B.Tech</strong>. 
+                Fueled by our passion for technology and food, we set out to create a groundbreaking web application that would revolutionize the way we interact with the culinary world. <br>
+                With that in mind, we combined our expertise in computer science and our shared love for food to develop a cutting-edge AI powered recipe generator web app.
+              </p>
+
+              <a href="/working">Read More</a>
+            </div>
+            <div>
+              <h2>EAT Your<br>Doctors</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo incidunt necessitatibus vero quae id ducimus, quos autem iure nobis dolores perferendis, molestias eum ad, esse reiciendis accusamus doloribus architecto laboriosam.</p>
+              <a href="/working">Read More</a>
+            </div>
+            <div>
+              <h2>Good Food<br>Good Mood</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis nemo delectus neque doloremque nostrum debitis labore illum expedita? Rem repellat nesciunt magnam natus at nulla iste facilis? Ut, ex.</p>
+              <a href="/working">Read More</a>
+            </div>
+          </div>
+          <div class="bannerImg" id="slideshow">
+            <img src="static/assets/Meal.gif" class="active">
+            
+          </div>
+        </div>
+        <div class="icons">
+          <ul class="sci">
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter"></i></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="controls">
+            <li>
+              <a href="#">
+                <i class="far fa-caret-square-left" onClick="prevSlide();prevSlideText();"></i>
+              </a>
+            </li>
+            <li >
+              <a href="#">
+                <i class="far fa-caret-square-right" onClick="nextSlide(); nextSlideText();"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>  
+</body>
+
+</html>

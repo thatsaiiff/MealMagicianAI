@@ -1,0 +1,218 @@
+body {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+
+    text-align: center;
+    font-size: 45px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: 'Lobster Two', cursive;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .1em solid transparent;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .2em;
+    /* Adjust as needed */
+    animation: typing 5s steps(60), blink-caret 5s;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+    to {
+      width: 80%
+    }
+  }
+  
+  
+  /* The typewriter cursor effect */
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent
+    }
+    50% {
+      border-color: white
+    }
+  }
+
+h4 {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-bottom: 150px;
+    animation: fadeIn 5s;
+    font-family: 'Macondo', cursive;
+
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+form {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contents {
+    height: 100vh;
+    background-image: url("../files/back4.jpg"); /* Replace with your desired background image URL */
+    background-size: cover;
+}
+
+.form {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form input[type="file"] {
+    position: relative;
+    width: 600px;
+    background: rgb(230,68,97);
+    background: linear-gradient(0deg, rgba(230,68,97,1) 0%, rgba(116,27,117,1) 100%);
+    border: 4px solid whitesmoke;
+    color: whitesmoke;
+    border-radius: 5px;
+    font-family: 'Macondo', cursive;
+    margin-bottom: 25px;
+}
+
+input::file-selector-button {
+    font-weight: bold;
+    color: white;
+    padding: 1.0em;
+    font-size: 1rem;
+    background-color: #c81803;
+    border: none;
+    margin-right: 160px;
+    cursor: pointer;
+    font-family: 'Macondo', cursive;
+
+}
+
+input::file-selector-button:hover {
+    background-color: #0056b3;
+}
+
+form input[type="submit"] {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b9d4f1;
+    color: #050001;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Macondo', cursive;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+    color: whitesmoke;
+
+}
+
+.output {
+    background-image: url(../files/3.png);
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 120vh;
+}
+
+.response {
+    margin: 0px auto;
+    margin-top: 20px;
+    height: fit-content;
+    background-color: rgba(144, 127, 185, 0.918); 
+    padding: 20px;
+    color: whitesmoke;
+    /* background-size: cover; */
+    border-radius: 10px;
+    border: 5px solid whitesmoke;
+    /* display: inline-block; */
+    font-size: 1.2rem;
+    font-family: "Macondo";
+}
+
+.recipe {
+    width: fit-content;
+    max-width: 1280px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* border-right: 2px solid; */
+    animation: typing 5s steps(60), blink-caret 5s;
+  }
+    
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover {
+    background-color: #8e2470;
+    border-bottom: 1px solid white;
+}
+
+.container{
+    width: 100%;  
+    font-weight: bold;
+    background: rgb(230,68,97);
+    background: linear-gradient(0deg, rgba(230,68,97,1) 0%, rgba(116,27,117,1) 100%);
+
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+.navbar{
+    justify-content: space-between;
+    width: 1180px;
+    margin: 0 auto;
+}
+.navbar-logo{
+    padding: 5px;
+}
+.nav-item{
+    color: white;
+    margin-inline: 5px;
+    font-family: 'Macondo', cursive;
+}
+
